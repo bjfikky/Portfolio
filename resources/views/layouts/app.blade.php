@@ -50,7 +50,7 @@
         <div class="copyright-text">
             <hr>
             <p>Copyright © 2017 Benjamin Orimoloye, All rights Reserved.
-                <br/> Created by <a target="_blank" href="http://www.benorim.com">BenOrim</a></p>
+                <br/> <small>Developed by <a target="_blank" href="http://www.benorim.com">Benjamin Orimoloye</a></small></p>
         </div>
     </div>
 </footer>

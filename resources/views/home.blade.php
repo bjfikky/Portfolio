@@ -6,7 +6,7 @@
 <section class="home" id="home">
     <div class="home-content home-profile">
         <div class="profile-img"> <img src="images/profile-2.jpg" alt=""> </div>
-        <h1>I'm <span class="element" data-text1="Benjamin Orimoloye" data-text2="a Web Developer" data-loop="true" data-backdelay="3000"></span></h1> <a class="home-down bounce" href="#about"><i class="fa fa-chevron-down"></i></a>
+        <h1>I'm <span class="element"  data-text1="{{$benjamin->name}}" data-text2="a {{$benjamin->profession}}"  data-loop="true" data-backdelay="3000"></span></h1> <a class="home-down bounce" href="#about"><i class="fa fa-chevron-down"></i></a>
         <!-- Social Icons -->
         <ul class="home-social">
             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -16,6 +16,7 @@
         </ul>
     </div>
 </section>
+
 
 <!--ABOUT-->
 <section class="about line-bg " id="about">
@@ -29,18 +30,21 @@
                     <h1>ABOUT ME</h1> </div>
                 <p>Certainly elsewhere my do allowance at. The address farther six hearted hundred towards husband. Are securing off occasion remember daughter replying. Held that feel his see own yet. Strangers ye to he sometimes propriety in. She right plate seven has. Bed who perceive judgment did marianne. </p>
                 <ul class="col-md-12 giggs-list">
-                    <li><span>Name : </span>Benjamin Orimoloye</li>
-                    <li><span>Website : </span>www.benorim.com</li>
-                    <li><span>Email : </span>benjamin@benorim.com</li>
-                    <li><span>Location : </span>Gaithersburg, MD, USA.</li>
-                    <li><span>Education : </span>M.S Applied Information Technology, TOWSON UNIVERSITY</li>
-                    <li><span><b>SKILLS : </span>HTML, CSS, JavaScript, SQL, OBJECT-ORIENTED PROGRAMMING (JAVA, C#, &amp; PHP)</b></li>
+                    <li><span>Name : </span>{{$benjamin->name}}</li>
+                    <li><span>Website : </span>{{$benjamin->website}}</li>
+                    <li><span>Email : </span>{{$benjamin->email}}</li>
+                    <li><span>Location : </span>{{$benjamin->location}}</li>
+                    <li><span>Education : </span>{{$benjamin->education}}</li>
+                    <li><b><span>SKILLS : </span>HTML, CSS, JavaScript, SQL, OBJECT-ORIENTED PROGRAMMING (JAVA, C#, &amp; PHP)</b></li>
                 </ul>
                 <button class="giggs_button top_15">DOWNLOAD CV</button>
             </div>
         </div>
     </div>
 </section>
+
+
+
 <div class="my_features line-bg" id="skills">
     <div class="container">
         <div class="row">

@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Attributes;
 use Illuminate\Http\Request;
 use App\Developer;
+use Illuminate\Support\Facades\Redirect;
 
 class HomeController extends Controller
 {
@@ -12,9 +14,13 @@ class HomeController extends Controller
     public function index() {
 
         $benjamin = Developer::find(1);         // Hard-coding Benjamin Orimoloye's id of 1 from DB
+        $features = Developer::find(1)->features;
 
+        return view('frontend.home', compact('benjamin', 'features'));
 
-        return view('home', compact('benjamin'));
+    }
 
+    public function contact() {
+        return redirect('/')->with('status', 'message sent');
     }
 }

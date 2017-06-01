@@ -342,6 +342,8 @@ article {
 
 /* Section Backgrounds */
 
+
+
 .dotted-bg {
     background: url(../images/dotted-bg.png) bottom repeat-x;
     padding-bottom: 60px;
@@ -666,7 +668,7 @@ article {
 /*------------------------ 2 Home ------------------------*/
 
 .home {
-    background: url(../images/home.jpg) no-repeat center;
+    background: url(../images/background.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1018,7 +1020,6 @@ article {
 .portfolio_filter {
     text-align: center;
 }
-
 .portfolio_filter ul {
     margin: auto;
     display: inline-block;

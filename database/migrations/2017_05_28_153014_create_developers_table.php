@@ -22,6 +22,7 @@ class CreateDevelopersTable extends Migration
             $table->string('phone');
             $table->string('location');
             $table->string('education');
+            $table->text('skills');
             $table->text('about');
             $table->timestamps();
         });

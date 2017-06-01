@@ -13,6 +13,13 @@
 
 Route::get('/', 'HomeController@index');
 
+Route::get('/posts', 'PostController@index');
+
+Route::get('/post/{id}', 'PostController@show');
+
+
+Route::get('/contact', 'HomeController@contact');
+
 //Route::get('/test', function () {
 //    return view('welcome', [
 //        'test' => 'Hello '

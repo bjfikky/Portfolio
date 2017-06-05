@@ -15,10 +15,10 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/posts', 'PostController@index');
 
-Route::get('/post/{id}', 'PostController@show');
+Route::get('/posts/{id}', 'PostController@show');
 
 
-Route::get('/contact', 'HomeController@contact');
+Route::post('/contact', 'HomeController@contact');
 
 //Route::get('/test', function () {
 //    return view('welcome', [

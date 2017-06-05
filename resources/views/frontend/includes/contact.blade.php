@@ -21,22 +21,35 @@
                             <p>{{$benjamin->email}}</p>
                         </div>
                     </div>
+
                     <!-- form -->
-                    <form class="col-md-offset-2 col-md-8 contact-form top_60" method="POST" action="/contact">
+                    <form class="col-md-offset-2 col-md-8 top_60" method="POST" action="/contact">
+
+                        @if (count($errors) > 0)
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+
+                        {{ csrf_field() }}
                         <div class="row">
                             <!-- name -->
                             <div class="col-md-6">
-                                <input id="con_name" class="form-input requie" type="text" placeholder="Name">
+                                <input id="con_name" class="form-input" type="text" placeholder="Name" name="name" value="{{old('name')}}" required>
                             </div>
                             <!-- email -->
                             <div class="col-md-6">
-                                <input id="con_email" class="form-input requie" type="text" placeholder="Email">
+                                <input id="con_email" class="form-input" type="text" placeholder="Email" name="email" value="{{old('email')}}" required>
                             </div>
                             <!--message-->
                             <div class="col-md-12">
-                                <textarea id="con_message" class="form-text requie" placeholder="Message" rows="8"></textarea>
+                                <textarea id="con_message" class="form-text" placeholder="Message" rows="8" name="message" required>{{ old('message') }}</textarea>
                             </div>
-                            <input id="con_submit" class="giggs_button2" type="submit" value="SEND A MESSAGE"> </div>
+                            <input class="giggs_button2" type="submit" value="SEND A MESSAGE"> </div>
                     </form>
                 </div>
             </div>

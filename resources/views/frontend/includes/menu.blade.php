@@ -24,10 +24,10 @@
 
                     <nav>
                         <ul class="nav-menu nav-scroll">
-                            <li><a href="/" class="selected">HOME</a></li>
+                            <li><a href="/" @if($_SERVER['REQUEST_URI'] == '/') class="selected" @endif >HOME</a></li>
                             <li><a href="/#about">ABOUT</a></li>
                             <li><a href="/#portfolio">PORTFOLIO</a></li>
-                            <li><a href="/posts">BLOG</a></li>
+                            <li><a href="/posts" @if($_SERVER['REQUEST_URI'] == '/posts') class="selected" @endif>BLOG</a></li>
                             <li><a href="/#contact">CONTACT</a></li>
                         </ul>
                     </nav>

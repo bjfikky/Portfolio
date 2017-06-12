@@ -9,7 +9,7 @@
             </div>
             <div class="col-md-12">
                 <div class="row">
-                    <!-- contact-informations -->
+                    <!-- contact-information -->
                     <div class="col-md-offset-2 col-md-8 contact-information top_45">
                         <div class="col-md-4 contact-info text-center"> <i class="fa fa-phone" aria-hidden="true"></i>
                             <p>{{$benjamin->phone}}</p>

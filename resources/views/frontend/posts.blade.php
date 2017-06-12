@@ -20,72 +20,23 @@
     <div class="container">
         <div class="row">
             <div class="page-content col-md-12">
+
+                @foreach($posts as $post)
+
                 <div class="col-md-4">
                     <div class="blog-box grid-blog">
                         <img src="images/blog-2.jpg" alt="">
                         <div class="col-md-12 blog-info">
                             <span class="data">Jeff D. Stutler - 16 September 2016</span>
-                            <h4>Sportsman delIghted improvIng dashwoods gay Instantly happiness six</h4>
-                            <p>Sportsman delighted improving dashwoods gay instantly happiness six. Ham now amounted absolute not mistaken way pleasant whatever. At an these still no dried folly stood thing.</p>
+                            <h4>{{$post->title}}</h4>
+                            <p>{{substr($post->body,0,350)}} ...</p>
                             <a href="#" class="blog-link"> READ MORE</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="blog-box grid-blog">
-                        <img src="images/blog-1.jpg" alt="">
-                        <div class="col-md-12 blog-info">
-                            <span class="data">Jeff D. Stutler - 16 September 2016</span>
-                            <h4>Sportsman delIghted improvIng dashwoods gay Instantly happiness six</h4>
-                            <p>Sportsman delighted improving dashwoods gay instantly happiness six. Ham now amounted absolute not mistaken way pleasant whatever. At an these still no dried folly stood thing.</p>
-                            <a href="#" class="blog-link"> READ MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="blog-box grid-blog">
-                        <img src="images/blog-3.jpg" alt="">
-                        <div class="col-md-12 blog-info">
-                            <span class="data">Jeff D. Stutler - 16 September 2016</span>
-                            <h4>Sportsman delIghted improvIng dashwoods gay Instantly happiness six</h4>
-                            <p>Sportsman delighted improving dashwoods gay instantly happiness six. Ham now amounted absolute not mistaken way pleasant whatever. At an these still no dried folly stood thing.</p>
-                            <a href="#" class="blog-link"> READ MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="blog-box grid-blog">
-                        <img src="images/blog-1.jpg" alt="">
-                        <div class="col-md-12 blog-info">
-                            <span class="data">Jeff D. Stutler - 16 September 2016</span>
-                            <h4>Sportsman delIghted improvIng dashwoods gay Instantly happiness six</h4>
-                            <p>Sportsman delighted improving dashwoods gay instantly happiness six. Ham now amounted absolute not mistaken way pleasant whatever. At an these still no dried folly stood thing.</p>
-                            <a href="#" class="blog-link"> READ MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="blog-box grid-blog">
-                        <img src="images/blog-3.jpg" alt="">
-                        <div class="col-md-12 blog-info">
-                            <span class="data">Jeff D. Stutler - 16 September 2016</span>
-                            <h4>Sportsman delIghted improvIng dashwoods gay Instantly happiness six</h4>
-                            <p>Sportsman delighted improving dashwoods gay instantly happiness six. Ham now amounted absolute not mistaken way pleasant whatever. At an these still no dried folly stood thing.</p>
-                            <a href="#" class="blog-link"> READ MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="blog-box grid-blog">
-                        <img src="images/blog-2.jpg" alt="">
-                        <div class="col-md-12 blog-info">
-                            <span class="data">Jeff D. Stutler - 16 September 2016</span>
-                            <h4>Sportsman delIghted improvIng dashwoods gay Instantly happiness six</h4>
-                            <p>Sportsman delighted improving dashwoods gay instantly happiness six. Ham now amounted absolute not mistaken way pleasant whatever. At an these still no dried folly stood thing.</p>
-                            <a href="#" class="blog-link"> READ MORE</a>
-                        </div>
-                    </div>
-                </div>
+
+                @endforeach
+
             </div>
 
         </div>

@@ -50,7 +50,9 @@ class HomeController extends Controller
                 ->withInput();
         }
 
-        return"sent";
+//        TODO-Fikky: Use PHPMailer class to send emails after the above validation
+
+        return "sent";
 
     }
 }

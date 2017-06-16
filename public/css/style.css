@@ -1327,6 +1327,10 @@ article {
     border-bottom: 3px solid;
 }
 
+.blog-info a {
+    color: #2d2d2d;
+}
+
 .owl-carousel .item img {
     width: 100%;
 }

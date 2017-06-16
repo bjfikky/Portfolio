@@ -20,6 +20,22 @@ Route::get('/posts/{id}', 'PostController@show');
 
 Route::post('/contact', 'HomeController@contact');
 
+
+/*
+|--------------------------------------------------------------------------
+| DASHBOARD ROUTES
+|--------------------------------------------------------------------------
+|
+| These are the routes specifically for the backend of the website.
+|
+*/
+
+Route::get('/dashboard', 'DashboardController@index');
+
+Route::get('/dashboard/posts', 'DashboardController@posts');
+
+Route::get('/dashboard/categories', 'DashboardController@categories');
+
 //Route::get('/test', function () {
 //    return view('welcome', [
 //        'test' => 'Hello '

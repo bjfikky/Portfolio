@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Attributes;
+use App\Post;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use App\Developer;
@@ -17,8 +18,9 @@ class HomeController extends Controller
 
         $benjamin = Developer::find(1);         // Hard-coding Benjamin Orimoloye's id of 1 from DB
         $features = Developer::find(1)->features;
+        $recentPosts = Post::limit(9)->get();
 
-        return view('frontend.home', compact('benjamin', 'features'));
+        return view('frontend.home', compact('benjamin', 'features', 'recentPosts'));
 
     }
 

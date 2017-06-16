@@ -24,20 +24,10 @@
                         <div class="blog-image">
                             <img src="images/blog-3.jpg" alt="">
                         </div>
-                        <h1 class="top_30">Agreement for listening remainder get attention law acuteness day. </h1>
+                        <h1 class="top_30">{{$post->title}} </h1>
                         <span class="blog-data">Jeff D. Stutler - 16 September 2016</span>
-                        <p>Raising say express had chiefly detract demands she. Quiet led own cause three him. Front no party young abode state up. Saved he do fruit woody of to. Met defective are allowance two perceived listening consulted contained. It chicken oh colonel pressed excited suppose to shortly. He improve started no we manners however effects. Prospect humoured mistress to by proposal marianne attended. Simplicity the far admiration preference everything. Up help home head spot an he room in. </p>
-                        <blockquote>“Instrument cultivated alteration any favourable expression law far nor. Both new like tore but year. An from mean on with when sing pain.”</blockquote>
-                        <p>Carriage quitting securing be appetite it declared. High eyes kept so busy feel call in. Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment. Passage weather as up am exposed. And natural related man subject. Eagerness get situation his was delighted.</p>
-                        <br/>
-                        <p>Rendered her for put improved concerns his. Ladies bed wisdom theirs mrs men months set. Everything so dispatched as it increasing pianoforte. Hearing now saw perhaps minutes herself his. Of instantly excellent therefore difficult he northward. Joy green but least marry rapid quiet but. Way devonshire introduced expression saw travelling affronting. Her and effects affixed pretend account ten natural. Need eat week even yet that. Incommode delighted he resolving sportsmen do in listening. </p>
-                        <ul class="post-list">
-                            <li> Greatest properly off ham exercise all. </li>
-                            <li> Unsatiable invitation its possession nor off.  </li>
-                            <li> All difficulty estimating unreserved increasing the solicitude.   </li>
-                        </ul>
                         <p>
-                            Style never met and those among great. At no or september sportsmen he perfectly happiness attending. Depending listening delivered off new she procuring satisfied sex existence. Person plenty answer to exeter it if. Law use assistance especially resolution cultivated did out sentiments unsatiable. Way necessary had intention happiness but september delighted his curiosity. Furniture furnished or on strangers neglected remainder engrossed.
+                            {{$post->body}}
                         </p>
                     </div>
                     <!-- Comments -->

@@ -28,9 +28,9 @@
                         <img src="images/blog-2.jpg" alt="">
                         <div class="col-md-12 blog-info">
                             <span class="data">Jeff D. Stutler - 16 September 2016</span>
-                            <h4>{{$post->title}}</h4>
+                            <a href="/posts/{{$post->id}}"><h4>{{$post->title}}</h4></a>
                             <p>{{substr($post->body,0,350)}} ...</p>
-                            <a href="#" class="blog-link"> READ MORE</a>
+                            <a href="/posts/{{$post->id}}" class="blog-link"> READ MORE</a>
                         </div>
                     </div>
                 </div>

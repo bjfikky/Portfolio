@@ -30,7 +30,11 @@ Route::post('/contact', 'HomeController@contact');
 |
 */
 
-Route::get('/dashboard', 'DashboardController@index');
+Route::get('/dashboard/login', 'DashboardController@login');
+
+Route::post('/dashboard/login', 'DashboardController@authUser');
+
+Route::get('/dashboard', 'DashboardController@overview');
 
 Route::get('/dashboard/posts', 'DashboardController@posts');
 

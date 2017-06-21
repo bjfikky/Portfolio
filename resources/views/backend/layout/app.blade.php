@@ -34,6 +34,7 @@
 
 <div class="container">
 
+    @if(Auth::check())
     <div class="menu">
 
         {{-- The "if statement" makes sure the proper tabs are highlighted even when query strings are present in the URL--}}
@@ -45,8 +46,7 @@
         </ul>
 
     </div>
-
-
+    @endif
 
     @yield('content')
 

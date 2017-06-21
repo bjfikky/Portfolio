@@ -30,15 +30,21 @@ Route::post('/contact', 'HomeController@contact');
 |
 */
 
-Route::get('/dashboard/login', 'DashboardController@login');
+Route::get('/dashboard/login', 'DashboardController@login')->name('login');
 
 Route::post('/dashboard/login', 'DashboardController@authUser');
+
+Route::get('/dashboard/logout', 'DashboardController@logout');
 
 Route::get('/dashboard', 'DashboardController@overview');
 
 Route::get('/dashboard/posts', 'DashboardController@posts');
 
 Route::get('/dashboard/categories', 'DashboardController@categories');
+
+Route::get('/dashboard/posts/new', 'DashboardController@newPost');
+
+Route::post('/dashboard/posts/new', 'DashboardController@storepost');
 
 //Route::get('/test', function () {
 //    return view('welcome', [

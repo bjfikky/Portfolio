@@ -14,7 +14,7 @@
         </div>
 
         <div class="col-sm-4">
-            <button class="btn btn-lg btn-primary">New Post</button>
+            <a class="btn btn-lg btn-primary" href="/dashboard/posts/new">New Post</a>
         </div>
     </div>
 
